@@ -59,6 +59,7 @@ public class Productos extends javax.swing.JPanel {
         btnEditar = new javax.swing.JButton();
         btnBuscar = new javax.swing.JButton();
         txtBuscador = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         contenido.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -113,6 +114,8 @@ public class Productos extends javax.swing.JPanel {
             }
         });
 
+        jButton1.setText("jButton1");
+
         javax.swing.GroupLayout contenidoLayout = new javax.swing.GroupLayout(contenido);
         contenido.setLayout(contenidoLayout);
         contenidoLayout.setHorizontalGroup(
@@ -126,6 +129,8 @@ public class Productos extends javax.swing.JPanel {
                 .addGroup(contenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(contenidoLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnBorrar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -152,7 +157,9 @@ public class Productos extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(contenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnBorrar)
-                    .addComponent(btnEditar))
+                    .addGroup(contenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnEditar)
+                        .addComponent(jButton1)))
                 .addGap(103, 103, 103))
         );
 
@@ -191,6 +198,7 @@ public class Productos extends javax.swing.JPanel {
     private javax.swing.JButton btnEditar;
     private javax.swing.JScrollPane calendario;
     private javax.swing.JPanel contenido;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel title;
     private javax.swing.JTextField txtBuscador;
     // End of variables declaration//GEN-END:variables
