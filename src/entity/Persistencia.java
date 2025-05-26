@@ -16,7 +16,7 @@ public class Persistencia {
  
     public  EntityManagerFactory getEmf(){
         if(emf==null){ // verifica si hay una conexcion de no ser asi crea uno
-            emf= Persistence.createEntityManagerFactory("Cafeteria_ProyectPU2");
+            emf= Persistence.createEntityManagerFactory("Cafeteria_ProyectPU");
             // toma como referencia siempre la conexion que esta en la persistencia.
         }
         return emf; // me retorna la conexion para ocuparla en otras clases
