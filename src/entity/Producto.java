@@ -14,6 +14,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
@@ -32,6 +33,10 @@ import javax.persistence.Table;
     @NamedQuery(name = "Producto.findByDescripcion", query = "SELECT p FROM Producto p WHERE p.descripcion = :descripcion"),
     @NamedQuery(name = "Producto.findByPrecio", query = "SELECT p FROM Producto p WHERE p.precio = :precio")})
 public class Producto implements Serializable {
+
+    @Lob
+    @Column(name = "imagenProducto")
+    private byte[] imagenProducto;
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -127,6 +132,14 @@ public class Producto implements Serializable {
     @Override
     public String toString() {
         return "entity.Producto[ idProducto=" + idProducto + " ]";
+    }
+
+    public byte[] getImagenProducto() {
+        return imagenProducto;
+    }
+
+    public void setImagenProducto(byte[] imagenProducto) {
+        this.imagenProducto = imagenProducto;
     }
     
 }

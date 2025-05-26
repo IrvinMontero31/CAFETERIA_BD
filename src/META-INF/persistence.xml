@@ -23,4 +23,27 @@
       <property name="javax.persistence.schema-generation.database.action" value="create"/>
     </properties>
   </persistence-unit>
+  <persistence-unit name="Cafeteria_ProyectPU2" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entity.Empleado</class>
+    <class>entity.EnumRol</class>
+    <class>entity.EnumStatus</class>
+    <class>entity.EnumTurno</class>
+    <class>entity.Factura</class>
+    <class>entity.Insumo</class>
+    <class>entity.Pedido</class>
+    <class>entity.Pedidoproducto</class>
+    <class>entity.Producto</class>
+    <class>entity.Receta</class>
+    <class>entity.Recetainsumo</class>
+    <class>entity.Turno</class>
+    <class>entity.Usuario</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cafe_proyect_m?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Placido0707."/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
 </persistence>

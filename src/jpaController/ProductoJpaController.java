@@ -4,8 +4,6 @@
  */
 package jpaController;
 
-import Clases_Tabla.exceptions.IllegalOrphanException;
-import Clases_Tabla.exceptions.NonexistentEntityException;
 import java.io.Serializable;
 import javax.persistence.Query;
 import javax.persistence.EntityNotFoundException;
@@ -19,10 +17,12 @@ import java.util.Collection;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import jpaController.exceptions.IllegalOrphanException;
+import jpaController.exceptions.NonexistentEntityException;
 
 /**
  *
- * @author juanm
+ * @author crist
  */
 public class ProductoJpaController implements Serializable {
 
